@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#1E1E1E] text-white;
+    font-family: 'League Spartan', sans-serif;
+  }
+}
