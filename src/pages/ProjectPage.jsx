@@ -1,6 +1,7 @@
 import { FaGithub, FaFigma } from 'react-icons/fa'
 import projectImg1 from '../assets/ProjekSistemPemesanan.png' 
 import projectImg2 from '../assets/projekwordpress.png' 
+import projectImg3 from '../assets/project3.png'
 
 const ProjectPage = () => {
   return (
@@ -118,6 +119,73 @@ const ProjectPage = () => {
               <div className="flex items-center gap-3 px-8 py-3 bg-[#25252b] text-white/50 rounded-xl border border-white/5 font-bold italic tracking-widest text-[10px] uppercase cursor-default">
                 Development Localhost
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Divider antara Project 02 dan 03 */}
+      <div className="w-full max-w-4xl px-6 mb-32 flex items-center gap-8 opacity-20">
+        <div className="h-px grow bg-linear-to-r from-transparent to-white"></div>
+        <div className="w-3 h-3 rotate-45 border border-white"></div>
+        <div className="h-px grow bg-linear-to-l from-transparent to-white"></div>
+      </div>
+
+      {/* PROJECT 03 */}
+      <div className="container mx-auto px-6 max-w-6xl mb-32 relative">
+        <span className="absolute -top-20 -left-10 text-[15rem] font-black text-white/3 select-none pointer-events-none hidden lg:block">03</span>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Sisi Kiri: Gambar & Link */}
+          <div className="relative group lg:sticky lg:top-44" data-aos="fade-right">
+            <div className="absolute -inset-4 bg-[#FF9F00]/20 blur-2xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+            
+            <div className="relative z-10 bg-[#25252b] p-4 rounded-[2.5rem] border border-white/10 shadow-2xl">
+              <div className="lg:hidden absolute -top-4 -left-4 w-12 h-12 bg-[#FF9F00] text-black flex items-center justify-center rounded-2xl font-black italic text-xl shadow-lg z-20">03</div>
+              <img src={projectImg3} alt="WordPress Retail Catalog" className="rounded-3xl w-full h-auto object-cover" />
+            </div>
+
+            <div className="flex justify-center mt-10 relative z-30">
+              <div className="flex items-center gap-3 px-8 py-3 bg-[#25252b] text-white/50 rounded-xl border border-white/5 font-bold italic tracking-widest text-[10px] uppercase cursor-default shadow-lg">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Production Website
+              </div>
+            </div>
+          </div>
+
+          {/* Sisi Kanan: Konten Teks */}
+          <div data-aos="fade-left" className="flex flex-col gap-8">
+            <div>
+              <div className="flex items-center gap-4 mb-4 justify-center lg:justify-start text-center lg:text-left">
+                <span className="hidden lg:block h-px w-8 bg-[#FF9F00]"></span>
+                <h3 className="text-[#FF9F00] text-sm font-black uppercase tracking-[0.4em]">CMS Development</h3>
+              </div>
+              <h2 className="text-3xl font-black text-white uppercase italic leading-tight mb-6 text-center lg:text-left">
+                WordPress Retail Catalog <br /> Reflex Plus (Professional Project)
+              </h2>
+              <p className="text-white/70 italic text-justify leading-relaxed text-sm bg-white/5 p-6 rounded-3xl border border-white/5">
+                Project ini merupakan website <span className="text-[#FF9F00]">Retail Catalog</span> yang dikembangkan khusus untuk menampilkan produk perusahaan secara komprehensif. Mengintegrasikan kemudahan manajemen konten dengan tampilan yang profesional dan responsif.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              <h4 className="text-white font-black italic uppercase tracking-widest text-sm border-l-4 border-[#FF9F00] pl-4 mb-2">Key Implementations</h4>
+              {[
+                { title: "Katalog Produk Luas", desc: "Manajemen lebih dari 200+ item produk Reflex Plus dengan kategorisasi yang rapi." },
+                { title: "WooCommerce Catalog Mode", desc: "Implementasi sistem belanja tanpa checkout langsung, difokuskan untuk display harga dan spesifikasi." },
+                { title: "Dynamic Layout", desc: "Menggunakan Elementor Pro untuk desain layout yang fleksibel dan mudah dikelola oleh klien." },
+                { title: "Optimasi Gambar", desc: "Proses bulk-editing dan kompresi aset gambar produk untuk memastikan loading speed yang optimal." }
+              ].map((f, i) => (
+                <div key={i} className="p-5 bg-[#25252b]/60 rounded-2xl border border-white/5 hover:bg-[#25252b] transition-colors group">
+                  <h5 className="text-[#FF9F00] font-bold italic uppercase text-xs mb-1 group-hover:translate-x-1 transition-transform">{f.title}</h5>
+                  <p className="text-white/50 text-[11px] leading-relaxed italic">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3 mt-4">
+              {['WordPress', 'Elementor', 'WooCommerce', 'Bulk Edit', 'Image Optimization'].map(tech => (
+                <span key={tech} className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-white text-[9px] font-bold uppercase tracking-widest italic">{tech}</span>
+              ))}
             </div>
           </div>
         </div>
