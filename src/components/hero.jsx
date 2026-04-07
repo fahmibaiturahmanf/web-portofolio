@@ -12,13 +12,14 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] uppercase italic text-white tracking-tighter">
           Saya <span className="text-[#FF9F00] block md:inline-block mt-2 md:mt-0">Muhammad Fahmi Baithurrohman</span>
         </h1>
+        
         <p className="text-gray-400 mt-6 text-base md:text-lg max-w-xl font-medium mx-auto md:mx-0">
-          Freshgraduate with a strong interest in <span className="text-white border-b border-[#FF9F00]">Web Development</span>
+          A Passionate <span className="text-white border-b border-[#FF9F00]">Web Enthusiast</span> & Developer
         </p>
 
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-10">
           <a 
-            href="/CV_Muhammad%20Fahmi%20Baithurrohman%20.pdf" 
+            href="/CV_Muhammad%20Fahmi.pdf" 
             download="CV_Muhammad_Fahmi.pdf"
             className="px-8 py-3 bg-white text-black rounded-full font-bold hover:bg-[#FF9F00] hover:text-white transition-all duration-300 shadow-lg active:scale-95"
           >
