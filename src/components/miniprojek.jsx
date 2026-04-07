@@ -72,6 +72,32 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      
+      <div className="mt-20 flex justify-center w-full" data-aos="zoom-in">
+        <button 
+          onClick={handleNavigate}
+          className="group relative flex items-center gap-4 px-12 py-5 bg-[#25252b] text-white rounded-2xl border border-white/10 hover:border-[#FF9F00] transition-all duration-500 overflow-hidden shadow-2xl"
+        >
+          <div className="absolute inset-0 bg-[#FF9F00]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <span className="relative z-10 text-sm font-black uppercase italic tracking-[0.3em] group-hover:text-[#FF9F00] transition-colors duration-300">
+            View All Projects
+          </span>
+          
+          <div className="relative z-10 flex items-center justify-center w-8 h-8 rounded-full bg-white/5 group-hover:bg-[#FF9F00] transition-all duration-500">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-4 w-4 text-[#FF9F00] group-hover:text-black transition-colors duration-300 transform group-hover:translate-x-1" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
     </section>
   )
 }
