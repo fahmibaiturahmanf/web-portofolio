@@ -124,19 +124,16 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      {/* Divider antara Project 02 dan 03 */}
       <div className="w-full max-w-4xl px-6 mb-32 flex items-center gap-8 opacity-20">
         <div className="h-px grow bg-linear-to-r from-transparent to-white"></div>
         <div className="w-3 h-3 rotate-45 border border-white"></div>
         <div className="h-px grow bg-linear-to-l from-transparent to-white"></div>
       </div>
 
-      {/* PROJECT 03 */}
       <div className="container mx-auto px-6 max-w-6xl mb-32 relative">
         <span className="absolute -top-20 -left-10 text-[15rem] font-black text-white/3 select-none pointer-events-none hidden lg:block">03</span>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Sisi Kiri: Gambar & Link */}
           <div className="relative group lg:sticky lg:top-44" data-aos="fade-right">
             <div className="absolute -inset-4 bg-[#FF9F00]/20 blur-2xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
             
@@ -145,19 +142,25 @@ const ProjectPage = () => {
               <img src={projectImg3} alt="WordPress Retail Catalog" className="rounded-3xl w-full h-auto object-cover" />
             </div>
 
-            <div className="flex justify-center mt-10 relative z-30">
-              <div className="flex items-center gap-3 px-8 py-3 bg-[#25252b] text-white/50 rounded-xl border border-white/5 font-bold italic tracking-widest text-[10px] uppercase cursor-default shadow-lg">
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Production Website
-              </div>
+           <div className="flex justify-center mt-10 relative z-30">
+              <a 
+                href="https://reflexplus.id" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-3 px-8 py-3 bg-[#25252b]
+                 text-white rounded-xl border border-white/10 hover:border-[#FF9F00]
+                  hover:text-[#FF9F00] transition-all duration-300 font-bold italic tracking-widest text-[10px] uppercase shadow-lg group/btn">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse group-hover/btn:bg-[#FF9F00]"></span> 
+                Visit Live Website
+              </a>
             </div>
           </div>
 
-          {/* Sisi Kanan: Konten Teks */}
           <div data-aos="fade-left" className="flex flex-col gap-8">
             <div>
               <div className="flex items-center gap-4 mb-4 justify-center lg:justify-start text-center lg:text-left">
                 <span className="hidden lg:block h-px w-8 bg-[#FF9F00]"></span>
-                <h3 className="text-[#FF9F00] text-sm font-black uppercase tracking-[0.4em]">CMS Development</h3>
+                <h3 className="text-[#FF9F00] text-sm font-black uppercase tracking-[0.4em]">Wordpress Development</h3>
               </div>
               <h2 className="text-3xl font-black text-white uppercase italic leading-tight mb-6 text-center lg:text-left">
                 WordPress Retail Catalog <br /> Reflex Plus (Professional Project)
