@@ -80,7 +80,7 @@ const About = () => {
 
           <div className="flex justify-center md:justify-start">
             <a 
-              href="/CV_Muhammad%20Fahmi%20Baithurrohman%20.pdf" 
+              href="/CV_Muhammad%20Fahmi.pdf" 
               download="CV_Muhammad_Fahmi.pdf"
               className="px-10 py-4 bg-[#FF9F00] text-black rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white transition-all duration-500 shadow-lg shadow-[#FF9F00]/20 transform hover:-translate-y-2 flex items-center gap-3"
             >

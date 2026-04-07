@@ -173,10 +173,9 @@ const ProjectPage = () => {
             <div className="grid grid-cols-1 gap-4">
               <h4 className="text-white font-black italic uppercase tracking-widest text-sm border-l-4 border-[#FF9F00] pl-4 mb-2">Key Implementations</h4>
               {[
-                { title: "Katalog Produk Luas", desc: "Manajemen lebih dari 200+ item produk Reflex Plus dengan kategorisasi yang rapi." },
+                { title: "Katalog Produk Luas", desc: "Menampilkan Catalog Produk yang disediakan oleh perusahaan" },
                 { title: "WooCommerce Catalog Mode", desc: "Implementasi sistem belanja tanpa checkout langsung, difokuskan untuk display harga dan spesifikasi." },
-                { title: "Dynamic Layout", desc: "Menggunakan Elementor Pro untuk desain layout yang fleksibel dan mudah dikelola oleh klien." },
-                { title: "Optimasi Gambar", desc: "Proses bulk-editing dan kompresi aset gambar produk untuk memastikan loading speed yang optimal." }
+                { title: "Dynamic Layout", desc: "Menggunakan Elementor untuk desain layout yang fleksibel dan mudah dikelola oleh klien." },
               ].map((f, i) => (
                 <div key={i} className="p-5 bg-[#25252b]/60 rounded-2xl border border-white/5 hover:bg-[#25252b] transition-colors group">
                   <h5 className="text-[#FF9F00] font-bold italic uppercase text-xs mb-1 group-hover:translate-x-1 transition-transform">{f.title}</h5>

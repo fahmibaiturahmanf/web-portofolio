@@ -11,6 +11,7 @@ import tailwindcss from '../assets/Tailwindcss.jpeg'
 import mysql from '../assets/Mysql.jpeg'
 import mongodb from '../assets/mongodb.jpeg'
 import github from '../assets/Github.jpeg'
+import wordpress from '../assets/wordpress.jpg'
 
 const Tools = () => {
   const techStack = [
@@ -26,11 +27,13 @@ const Tools = () => {
     { name: 'Tailwind', img: tailwindcss },
     { name: 'MySQL', img: mysql },
     { name: 'MongoDB', img: mongodb },
+    { name: 'WordPress', img: wordpress },
     { name: 'GitHub', img: github },
   ]
 
   return (
     <section className="py-24 flex flex-col items-center relative overflow-hidden">
+      {/* Background Glow Effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#FF9F00] opacity-5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="w-full max-w-4xl mb-12 px-4">
@@ -44,9 +47,11 @@ const Tools = () => {
       </div>
 
       <div className="relative w-full max-w-5xl px-4 group">
+        {/* Outer Glow on Hover */}
         <div className="absolute -inset-0.5 bg-linear-to-r from-[#FF9F00] to-white rounded-4xl opacity-0 group-hover:opacity-20 blur-sm transition duration-700"></div>
 
         <div className="relative bg-[#25252b]/60 backdrop-blur-xl rounded-4xl p-12 md:p-20 border border-white/10 shadow-2xl overflow-hidden">
+          {/* Subtle Texture Overlay */}
           <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 items-center justify-items-center">
@@ -55,6 +60,7 @@ const Tools = () => {
                 key={index} 
                 className="group/item flex flex-col items-center gap-4 transition-all duration-500 hover:-translate-y-2"
               >
+                {/* Icon Container */}
                 <div className="relative w-20 h-20 flex items-center justify-center p-3 rounded-2xl bg-white/5 border border-white/5 group-hover/item:border-[#FF9F00]/30 group-hover/item:bg-white transition-all duration-500 shadow-lg group-hover/item:shadow-[#FF9F00]/20">
                   <img 
                     src={tool.img} 
@@ -63,7 +69,8 @@ const Tools = () => {
                   />
                 </div>
             
-                <span className="text-gray-500 text-[11px] font-mono font-bold uppercase tracking-widest group-hover/item:text-[#FF9F00] transition-colors duration-300">
+                {/* Tool Name Label */}
+                <span className="text-gray-500 text-[11px] font-mono font-bold uppercase tracking-widest group-hover/item:text-[#FF9F00] transition-colors duration-300 text-center">
                   {tool.name}
                 </span>
               </div>
